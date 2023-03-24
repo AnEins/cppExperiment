@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/Buchstaben_und_Woerter.cpp.dir/Day1/Buchstaben_und_Woerter.cpp.o -o Buchstaben_und_Woerter.cpp 

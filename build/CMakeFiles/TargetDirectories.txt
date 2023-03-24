@@ -1,0 +1,5 @@
+/mnt/d/OneDrive - TUM/Source/Praktikum_Cpp/build/CMakeFiles/Praktikum_Cpp.dir
+/mnt/d/OneDrive - TUM/Source/Praktikum_Cpp/build/CMakeFiles/A1.cpp.dir
+/mnt/d/OneDrive - TUM/Source/Praktikum_Cpp/build/CMakeFiles/A2.cpp.dir
+/mnt/d/OneDrive - TUM/Source/Praktikum_Cpp/build/CMakeFiles/edit_cache.dir
+/mnt/d/OneDrive - TUM/Source/Praktikum_Cpp/build/CMakeFiles/rebuild_cache.dir

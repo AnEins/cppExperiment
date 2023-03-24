@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/Palindrome.cpp.dir/Day1/Palindrome.cpp.o -o Palindrome.cpp 

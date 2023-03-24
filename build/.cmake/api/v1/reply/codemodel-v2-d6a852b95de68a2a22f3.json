@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Praktikum_Cpp",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "A1.cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-A1.cpp-Debug-b9a94d01660541ab5720.json",
+					"name" : "A1.cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "A2.cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-A2.cpp-Debug-ada0efd5da9b4f27e536.json",
+					"name" : "A2.cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Praktikum_Cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Praktikum_Cpp-Debug-64fb4a57e48bcbd76221.json",
+					"name" : "Praktikum_Cpp",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/mnt/d/OneDrive - TUM/Source/Praktikum_Cpp/build",
+		"source" : "/mnt/d/OneDrive - TUM/Source/Praktikum_Cpp"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

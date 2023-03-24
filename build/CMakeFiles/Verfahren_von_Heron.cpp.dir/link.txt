@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/Verfahren_von_Heron.cpp.dir/Day1/Verfahren_von_Heron.cpp.o -o Verfahren_von_Heron.cpp 

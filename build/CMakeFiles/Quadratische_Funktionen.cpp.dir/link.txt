@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/Quadratische_Funktionen.cpp.dir/Day1/Quadratische_Funktionen.cpp.o -o Quadratische_Funktionen.cpp 
