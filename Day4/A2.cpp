@@ -35,7 +35,9 @@ class KeyboardControl {
 void KeyboardControl::Communicate() {
   char ch;
   vector<char> List;
-
+  initscr();
+  noecho();
+  nodelay(stdscr, true);
   while ((ch = getch()) != 'q') {
     if (ch != -1) {
       List.push_back(ch);
@@ -83,7 +85,7 @@ void KeyboardControl::Communicate() {
             desired_speed[0] -= 0.005;//rechts
             desired_speed[1] += 0.005;//links
           } else {
-            printw("\nThe speed is over the +- 0.5 range.\n");
+            printw("The speed is over the +- 0.5 range.\n");
             continue;
           }
           break;
@@ -123,16 +125,14 @@ void KeyboardControl::Communicate() {
   refresh();
   sleep(2);
   //sleep() does nothing, but give the user a little reaction/reading time from an ergonomic point of view
-  //refresh();
-}
-int main() {
-  initscr();
-  noecho();
-  nodelay(stdscr, true);
-  KeyboardControl car;
-  car.Communicate();
   getch();
   endwin();
+}
+int main() {
+
+  KeyboardControl car;
+  car.Communicate();
+
   cout << "desired_speed_history" << std::endl;
   for (int i = 0; i < car.set_speed_history.size(); ++i) {
     for (int j = 0; j < car.set_speed_history[i].size(); ++j) {
