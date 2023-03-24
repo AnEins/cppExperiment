@@ -50,8 +50,7 @@ void KeyboardControl::Communicate() {
             desired_speed[0] += 0.01;
             desired_speed[1] += 0.01;
           } else {
-            printw("The speed is over 0.5. \n"
-                   "Can't speed up anymore ");
+            printw("The speed is over 0.5. Can't speed up anymore\n");
             continue;
           }
 
@@ -62,7 +61,7 @@ void KeyboardControl::Communicate() {
             desired_speed[0] -= 0.01;
             desired_speed[1] -= 0.01;
           } else {
-            printw("The speed is below -0.5. \nCan't slow down any more");
+            printw("The speed is over 0.5. Can't speed up anymore\n");
             continue;
           }
 
