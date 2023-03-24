@@ -30,6 +30,7 @@ class KeyboardControl {
   vector<array<double, 2>> set_speed_history = {{0, 0}};
   //Stelle '0' die v des rechten Motors
   //Stelle '1' die v des linken Motors.
+
 };
 void KeyboardControl::Communicate() {
   char ch;
@@ -106,24 +107,22 @@ void KeyboardControl::Communicate() {
   //Anhalten des Car und Beenden von Programm
   desired_speed[0] = 0;
   desired_speed[1] = 0;
-//  while (fabs(actual_speed[0] - 0.) > precision || fabs(actual_speed[1] - 0.) > precision) {
-//    //fabs(actual_speed[0] - 0.) : Ist-Geschwindigkeit != 0;
-//    /*The braking process takes time, check that the actual speed is equal to zero every two seconds
-//     *
-//     * */
-//    sleep(2);
-//    printw("actual speed: R: %f; L: %f", actual_speed[0], actual_speed[1]);
-//    refresh();
-//    if (actual_speed[0] == 0 && actual_speed[1] == 0) {
-//      printw("actual speed: R: %f; L: %f", actual_speed[0], actual_speed[1]);
-//      refresh();
-//      break;
-//    }
-//  }
+  while (fabs(actual_speed[0] - 0.) > precision || fabs(actual_speed[1] - 0.) > precision) {
+    //fabs(actual_speed[0] - 0.) : Ist-Geschwindigkeit != 0;
+    /*The braking process takes time, check that the actual speed is equal to zero every two seconds* */
+    sleep(1);
+    printw("actual speed: R: %f; L: %f", actual_speed[0], actual_speed[1]);
+    refresh();
+    if (actual_speed[0] == 0 && actual_speed[1] == 0) {
+      printw("actual speed: R: %f; L: %f", actual_speed[0], actual_speed[1]);
+      refresh();
+      break;
+    }
+  }
 
-  printw("\nLeaving the Programm");
+  printw("\nLeaving the Programm\n");
   refresh();
-  sleep(4);
+  sleep(2);
   //sleep() does nothing, but give the user a little reaction/reading time from an ergonomic point of view
   //refresh();
 }
@@ -133,6 +132,7 @@ int main() {
   nodelay(stdscr, true);
   KeyboardControl car;
   car.Communicate();
+  getch();
   endwin();
   cout << "desired_speed_history" << std::endl;
   for (int i = 0; i < car.set_speed_history.size(); ++i) {
@@ -141,6 +141,5 @@ int main() {
     }
     cout << std::endl;
   }
-  getch();
   return 0;
 }
